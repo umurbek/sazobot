@@ -44,13 +44,19 @@ def download_fast(url: str):
     job = uuid.uuid4().hex
     opts = _ydl_base_opts()
     opts.update({
-        "format": "bestaudio[ext=m4a]/bestaudio",
+        "format": "bestaudio/best",
+        "merge_output_format": "m4a",
         "outtmpl": str(DOWNLOAD_DIR / f"{job}.%(ext)s"),
     })
     with YoutubeDL(opts) as ydl:
         info = ydl.extract_info(url, download=True)
         path = Path(ydl.prepare_filename(info))
-        return str(path), info.get("title") or "Unknown", info.get("uploader") or "", int(info.get("duration") or 0)
+        return (
+            str(path),
+            info.get("title") or "Unknown",
+            info.get("uploader") or "",
+            int(info.get("duration") or 0),
+        )
 
 def download_mp3(url: str, q: str):
     job = uuid.uuid4().hex
