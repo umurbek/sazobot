@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+ENV/
+
+# Logs
+bot.log
+*.log
+
+# Downloads (temporary files)
+downloads/*
+!downloads/.keep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# yt-dlp cache
+.cache/
