@@ -78,4 +78,4 @@ sazobot/
 ├── services/             # Core logic (yt-dlp integration, caching)
 ├── utils/                # Helpers, loggers, and auto-cleanup tasks
 ├── .env.example          # Example environment variables
-└── requirements.txt      # Python dependencies
+└── requirements.txt      # Python dependencies.
