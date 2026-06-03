@@ -64,6 +64,129 @@
 - **📄 Paginatsiya:** Inline tugmalar yordamida qidiruv natijalari bo'ylab qulay harakatlanish.
 
 ---
+## 📦 Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/umurbek/sazobot.git
+cd sazobot
+```
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Linux / macOS:
+
+```bash
+source venv/bin/activate
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment
+
+Create a `.env` file:
+
+```env
+BOT_TOKEN=your_bot_token
+```
+
+### 5. Start Bot
+
+```bash
+python bot.py
+```
+
+---
+
+## 📸 Screenshots
+
+### Main Menu
+
+<img src="docs/images/main-menu.png" width="300">
+
+### Search Results
+
+<img src="docs/images/search-results.png" width="300">
+
+### Download Menu
+
+<img src="docs/images/download-menu.png" width="300">
+
+---
+
+## ⚙️ Performance
+
+| Operation      | Average Time |
+| -------------- | ------------ |
+| Search         | 200-500 ms   |
+| M4A Download   | 2-5 sec      |
+| MP3 Conversion | 5-15 sec     |
+| Cache Response | <100 ms      |
+
+---
+
+## 🔒 Security
+
+* User requests are isolated.
+* Temporary files are automatically deleted.
+* Queue system prevents resource abuse.
+* Environment variables are stored securely.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Open Pull Request
+
+```bash
+git checkout -b feature/amazing-feature
+git commit -m "Add amazing feature"
+git push origin feature/amazing-feature
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Umurbek Faridov**
+
+GitHub:
+https://github.com/umurbek
+
+Telegram:
+https://t.me/your_username
+
+---
+
+⭐ If you like this project, please give it a star.
 
 ## 🧱 Project Structure / Loyiha Strukturasi
 
