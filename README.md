@@ -202,3 +202,10 @@ sazobot/
 ├── utils/                # Helpers, loggers, and auto-cleanup tasks
 ├── .env.example          # Example environment variables
 └── requirements.txt      # Python dependencies.
+
+
+MIT License
+
+Copyright (c) 2026 Umurbek Faridov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
